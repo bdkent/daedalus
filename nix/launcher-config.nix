@@ -23,9 +23,9 @@
 let
   clusterOverrides = {
     mainnet_flight = {
-      cardanoEnv = cardanoLib.environments.mainnet;
-      cluster = "mainnet";
-      networkName = "mainnet";
+      cardanoEnv = cardanoLib.environments.mainnet_candidate;
+      cluster = "shelley_testnet";
+      networkName = "shelley_testnet";
     };
     shelley_testnet_v6 = {
       cardanoEnv = cardanoLib.environments.mainnet_candidate_4;
